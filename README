@@ -1,0 +1,23 @@
+This MATLAB project evaluates the time-evolution of 
+a trapped BEC in a moving lattice. 
+
+We solve the Non-Linear Schrodinger equation given by ...
+including correction to the parameters due to the external trap
+
+
+The elements of the standard NL Schrodinger equation are:
+
+onsite.m              : Hubbard-like on-site interaction
+NN_tunneling.m       : Hubbard-like next-neighbour tunneling
+
+and the effects of the trapping potential are evaluated in
+
+onsite_shift.m        : site dependent energy shift due to the trapping potential
+NN_tunneling_site.m  : Site-dependent Hubbard-like next-neighbour tunneling
+
+
+The calculation of the parameters of the tight-binding model from the parameters of the
+optical lattice and the dipole trap are implemented here:
+
+OL_2_DNLS_parameters.m: 
+
